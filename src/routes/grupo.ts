@@ -1,10 +1,11 @@
 import { Router } from "express";
-import controller from "../controllers/GrupoController";
+import GrupoController from "../controllers/GrupoController";
+
 const routes = Router();
 
-routes.post('/', controller.create);
-routes.get('/', controller.list);
-routes.delete('/', controller.delete);
-routes.put('/', controller.update);
+routes.post('/', GrupoController.create);
+routes.get('/', GrupoController.list);
+routes.delete('/', GrupoController.delete);
+routes.put('/', GrupoController.update);
 
 export default routes;

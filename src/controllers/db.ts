@@ -7,7 +7,7 @@ const pool = new Pool({
     port: 5432,
 });
 
-async function query(sql: string, params?: any[]) {
+    async function query(sql: string, params?: any[]): Promise<any> {
     try {
         const res = await pool.query(sql, params);
         if (res.command == 'INSERT') {
