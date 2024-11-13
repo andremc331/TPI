@@ -36,4 +36,5 @@ class GrupoController {
     }
 }
 
-export default new GrupoController();
+const controller = new GrupoController();
+export default controller;

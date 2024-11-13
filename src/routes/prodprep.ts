@@ -1,8 +1,7 @@
-import { Router } from 'express';
-import controller from '../controllers/GrupoController';
-
+import { Router } from "express";
+import controller from "../controllers/ProdutoController";
 const routes = Router();
-
+-
 routes.post('/', controller.create);
 routes.get('/', controller.list);
 routes.delete('/', controller.delete);
